@@ -1,0 +1,12 @@
+@namespace("example.avro.domains.users")
+protocol UserProto {
+  record User {
+    long id;
+    string name;
+    int age;
+  }
+
+  User add(string name, int age = 0);
+  
+  User getById(long id);
+}
